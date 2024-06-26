@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chatroom">
+    <meta name="keywords" content="Chatroom, Chat">
+    <meta name="author" content="Your Name">
+    <title>Chatroom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">Chatroom</h1>
+        </header>
+        <main>
+            <div id="chatroom" class="animated fadeInUp">
+                <div id="messages"></div>
+                <form id="messageForm">
+                    <input type="text" id="messageInput" autocomplete="off" placeholder="Type a message">
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </main>
+        
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="scripts/chatroom.js"></script>
+</body>
+</html>
